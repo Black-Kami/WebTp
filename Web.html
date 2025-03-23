@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Image Slideshow</title>
+    <link rel="stylesheet" href="Web.css">
+
+</head>
+
+<body>
+    <div class="container">
+        <header>
+            <nav><img class="logo" src="logo.png.webp" alt=""></nav>
+    
+   <h1 class="h2w">Welcome to my Website</h1>
+        </header>
+        <aside class="bodyAside">
+            <table class="table">
+                <tr>
+                    <th><button class="html" onclick="showArticle(0)">HTML</button></th>
+                </tr>
+                <tr>
+                    <th><button class="css" onclick="showArticle(1)">CSS</button></th>
+                </tr>
+                <tr>
+                    <th><button class="js" onclick="showArticle(2)">JS</button></th>
+                </tr>
+                <tr>
+                    <th><button class="php" onclick="showArticle(3)">PHP</button></th>
+                </tr>
+                <tr>
+                    <th><button class="python" onclick="showArticle(4)">PYTHON</button></th>
+                </tr>
+                <tr>
+                    <th><button class="react" onclick="showArticle(5)">REACT</button></th>
+                </tr>
+            </table>
+        </aside>
+        <section>
+            <div class="slideshow-container">
+                <img class="islides" src="php_img.jpg" alt="Slide 1">
+                <img class="islides" src="css_img.jpg" alt="Slide 2">
+                <img class="islides" src="html_img.jpg" alt="Slide 3">
+                <img class="islides" src="js_img.png" alt="Slide 4">
+                <img class="islides" src="python_img.jpg" alt="Slide 5">
+                <img class="islides" src="react_img.png" alt="Slide 6">
+                <button class="prev_i" onclick="changeSlide(-1)">&#10094;</button>
+                <button class="next_i" onclick="changeSlide(1)">&#10095;</button>
+            </div>
+
+            <script src="Web.js"></script>
+        </section>
+        <article>
+            <div class="content">
+                <div class="article active" id="article-0">
+                    <video class="vslides" width="620" height="540" controls>
+                        <source src="html_video.mp4" type="video/mp4">
+                    </video>
+                </div>
+                <div class="article" id="articlecontent-1">
+                    <video class="vslides" width="620" height="540" controls>
+                        <source src="css_video.mp4" type="video/mp4">
+                    </video>
+                </div>
+                <div class="article" id="article-2">
+                    <video class="vslides" width="620" height="540" controls>
+                        <source src="js_video.mp4" type="video/mp4">
+                    </video>
+                </div>
+                <div class="article" id="article-3">
+                    <video class="vslides" width="620" height="540" controls>
+                        <source src="php_video.mp4" type="video/mp4">
+                    </video>
+                </div>
+                <div class="article" id="article-4">
+                    <video class="vslides" width="620" height="540" controls>
+                        <source src="python_video.mp4" type="video/mp4">
+                    </video>
+                </div>
+                <div class="article" id="article-5">
+                    <video class="vslides" width="620" height="540" controls>
+                        <source src="react_video.mp4" type="video/mp4">
+                    </video>
+                </div>
+            </div>
+
+            <script src="Web2.js"></script>
+        </article>
+        <footer>
+            <p>&copy; 2023 My Website. All Rights Reserved.</p>
+        </footer>
+    </div>
+
+
+</body>
+
+</html>
